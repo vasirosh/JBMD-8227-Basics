@@ -1,0 +1,57 @@
+package com.rosh;
+
+public class Clock {
+	
+	protected int hours=01;
+	protected int minutes=02;
+	protected int seconds=03;
+	protected int milliseconds=004;
+	
+	
+	
+	public Clock(int hours, int minutes, int seconds, int milliseconds) {
+		super();
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+		this.milliseconds = milliseconds;
+	}
+	public Clock(int hours, int minutes, int seconds) {
+		super();
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+	}
+	public Clock(int hours, int minutes) {
+		super();
+		this.hours = hours;
+		this.minutes = minutes;
+	}
+	public Clock(int hours) {
+		super();
+		this.hours = hours;
+	}
+	public int getHours() {
+		return hours;
+	}
+	public int getMinutes() {
+		return minutes;
+	}
+	public int getSeconds() {
+		return seconds;
+	}
+	public int getMilliseconds() {
+		return milliseconds;
+	}
+	
+	public void getTime() {
+		
+		System.out.println(hours+":"+minutes+":"+seconds+"."+milliseconds);
+		
+	}
+	
+	
+	
+	
+
+}
